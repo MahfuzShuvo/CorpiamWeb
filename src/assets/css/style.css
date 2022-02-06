@@ -692,16 +692,16 @@ select option {
     margin-bottom: 20px;
 }
 .announcement-content .top .btn-group {
-    height: 35px;
+    height: 30px;
 }
 .announcement-content .top .btn-group button.split {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    padding: 5px 15px;
+    padding: 5px 12px;
 }
 .announcement-content .top .btn-group button.split-drop {
     background: #2D3252;
-    padding: 10px;
+    padding: 7px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     transition: all 0.3s ease;
@@ -712,7 +712,7 @@ select option {
 .team-search {
     border: 1px solid #afafaf;
     border-radius: 16px;
-    height: 34px;
+    height: 30px;
     position: relative;
     width: 100%;
     display: flex;
@@ -720,13 +720,14 @@ select option {
 }
 .team-search svg {
     flex: 1;
+    padding: 0 5px;
 }
 .team-search input {
     border: none;
     outline: none;
     width: 85%;
     background: transparent;
-    padding: 7px 0px;
+    padding: 5px 0px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
 }
@@ -772,7 +773,7 @@ select option {
     transform: rotateX(180deg);
 }
 .task-group-content {
-    min-width: 180px;
+    min-width: 170px;
     padding-bottom: 15px;
 }
 .task-sidebar-card .card-body {
@@ -857,4 +858,62 @@ select option {
 .create-grp-button:hover {
     transform: scale(.98);
     box-shadow: 0 1px 5px #00000025;
+}
+.announcement-card {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 0;
+    height: fit-content;
+}
+.announcement-card .card-body {
+    padding: 10px 20px;
+}
+.announcement-top {
+    line-height: 12px;
+    justify-content: flex-end;
+}
+.announcement-top::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #E0E0E0;
+    left: 20px;
+}
+.anc-datetime span:first-child {
+    padding-right: 6px;
+}
+.anc-datetime span:last-child {
+    border-left: 1px solid #00000045;
+    padding-left: 6px;
+}
+.task-badge {
+    padding: 3px 8px;
+    color: var(--primary-text-color);
+    font-size: 10px;
+    background: #D3E4FF;
+}
+.announcement-reply-button {
+    color: #979797;
+    border-radius: 4px;
+    padding: 5px 15px;
+    border: 1px solid #ababab55;
+    background: #fff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+.announcement-reply-button:hover {
+    transform: scale(.95);
+}
+.announcement-card-item:not(:first-child) {
+    margin-top: 10px;
+}
+.attachment-items {
+    color: #ababab;
+    border: 1px solid #ababab75;
+    border-radius: 4px;
+    padding: 0 5px;
 }

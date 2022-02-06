@@ -9,6 +9,9 @@ import { TasksComponent } from './project-board/tasks/tasks.component';
 import { AnnouncementComponent } from './project-board/announcement/announcement.component';
 import { TeamComponent } from './project-board/team/team.component';
 import { SettingsComponent } from './project-board/settings/settings.component';
+import { TaskGroupComponent } from './project-board/tasks/task-group/task-group.component';
+import { TaskGroupItemComponent } from './project-board/tasks/task-group/task-group-item/task-group-item.component';
+import { AnnouncementBodyComponent } from './project-board/announcement/announcement-body/announcement-body.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { SettingsComponent } from './project-board/settings/settings.component';
     TasksComponent,
     AnnouncementComponent,
     TeamComponent,
-    SettingsComponent
+    SettingsComponent,
+    TaskGroupComponent,
+    TaskGroupItemComponent,
+    AnnouncementBodyComponent
   ],
   imports: [CommonModule, ProjectsRoutingModule],
 })
